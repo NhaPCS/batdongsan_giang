@@ -1,0 +1,122 @@
+.page, .fixed-top{
+	max-width: 1920px;
+	margin:0 auto;
+	/*border:1px solid #eee;*/
+}
+@media (min-width: 1200px){
+	.container {
+		max-width: 1280px;
+	}
+	.vitri{min-height:1220px}
+}
+@media only screen and (max-width: 1610px) {
+	.slides .slide-item.slide-text-left .button {
+		top: 52vh;
+		left: 260px;
+		right:auto;
+	}
+	.slides .slide-item.slide-text-right .button {
+		top: 52vh;
+		right: 200px;
+		left: auto;
+	}
+	.vitri{min-height:1028px}
+}
+@media only screen and (max-width: 1400px) {
+	.slides .slide-item.slide-text-left .button {
+		left: 212px;
+		right:auto;
+	}
+	.slides .slide-item.slide-text-right .button {
+		right: 160px;
+		left: auto;
+	}
+	.tvc{
+		margin-top: -100px
+	}
+	.tvc .content{padding-top: 180px;padding-bottom: 60px}
+	.vitri .content .text{line-height: 1.8}
+	.vitri{min-height:875px}
+}
+@media only screen and (max-width: 900px) {
+	.vitri{min-height:auto}
+	#slides{
+		margin-top: 30px;
+	}
+	.elementor .slides img,
+	.slides img{
+		height: 250px;
+	}
+	.tongquan{
+		margin-top: 20px;
+	}
+	.tongquan .content{padding:0;padding-top: 20px;}
+	.tongquan .content h2, .tvc .content h2{font-size: 32px}
+	.tongquan .content ul{
+		padding-left: 15px!important;
+		padding-right: 15px;
+		margin: 0!important;
+	}
+	.tvc{margin-top: 20px;background: #caa968;}
+	.tvc .content{padding:30px 0;}
+	.tvc .content h3{font-size: 30px}
+	.tvc .content .video{margin-bottom: 30px;}
+	.vitri .vitri-img{position: relative;}
+	.vitri .content{padding:30px 0;}
+	.vitri .content h3{font-size: 40px;}
+	.vitri .content h2{font-size: 25px;}
+	.matbang .content h3 {font-size: 36px}
+	.tienich .content h2{font-size: 23px;line-height: 1.5;margin-bottom: 20px;}
+	.tienich .content .col-lg-2{padding:0 15px !important;}
+	.tienich .content ul{margin-top: 0}
+	.tienich .content{font-size: 0.7rem}
+	.tienich{padding-top:0;padding-bottom: 0}
+	.chinhsach{padding:30px 0;}
+	.chinhsach h2{font-size: 25px;line-height: 1.5;font-weight: bold}
+	.chinhsach .chinhsach-slides{margin-top: 20px}
+	.chinhsach .chinhsach-slides .chinhsach-slide{margin-right:0;}
+	.chinhsach .chinhsach-slides .chinhsach-slide h3{font-size: 26px;}
+	.news h2{font-size: 32px;}
+	.news .first-post .new .text h3{font-size: 16px;}
+	.news .new .text .expert{font-size: 0.8rem}
+	.news .col-lg-6{margin-bottom: 1rem}
+	.news{padding:30px 0;}
+	.footer .info .add, .footer .info .phone, .footer .info .web, .footer .info .mail{font-size: 0.9rem}
+	.tongquan .content ul li{font-size: 0.7rem}
+	#navbarText.show{background: url(../images/footer-bg.jpg);background-size: cover}
+	.canho .can3d img{position: relative;left: 0}
+	.canho .nav-link{font-size: 0.8rem}
+	.canho .tab-content{margin-top:20px !important;}
+	.canho .tab-content img{max-width: 100% !important;height: auto}
+	.canho .tab-content .caninfo{width:100%;height: auto}
+	.tvc .content .video .play-btn {
+		top: 28%;
+		left: 35%;
+	}
+	.tvc .content .text{padding-left: 0}
+	.vitri .content .text{padding-right: 0}
+	.matbang .content h2{font-size: 30px;}
+	.tienich .content{margin:20px 0;}
+	.tienich .slides3 .slide:after{
+		height: 150px;
+	}
+	.tienich .slides3 .slide span{
+		font-size: 1.2rem;
+		bottom: 10px;
+	}
+	.fixed-menu{
+		right:15px;
+	}
+	.slides .slide-item .button img{
+		width: 50vw !important;
+	}
+	.slides .slide-item .button{
+		top:25vh;
+		left: 40px
+	}
+}
+@media only screen and (max-width: 766px) {
+	.slides .slide-item .button{
+		top:20vh;
+	}
+}
