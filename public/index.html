@@ -4125,24 +4125,35 @@ a:hover {
                                     <p role="status" aria-live="polite"
                                        aria-atomic="true"></p>
                                 </div>
-                                <form action="mailto:giangnt421@gmail.com?subject=TienHaiStarCity" method="post" class="wpcf7-form init"
-                                      enctype="multipart/form-data"
-
+                                <form  class="wpcf7-form init"
                                       name="EmailForm"
                                       novalidate="novalidate" data-status="init">
-                                    <div class="row row-collapse align-center">
+                                    <div class="col-inner">
+                                        <label class="mail"><span class="wpcf7-form-control-wrap tel-937">
+                                                    <input
+                                                            id="fullnameInput"
+                                                            type="tel" name="tel-937" value="" size="40"
+                                                            class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
+                                                            aria-required="true" aria-invalid="false"
+                                                            placeholder="Nhập họ và tên..."/>
+                                                </span></label>
+                                    </div>
+                                    <div class="row row-collapse align-center" style="margin-top:10px">
                                         <div class="col medium-8 small-12 large-8">
                                             <div class="col-inner">
-                                                <label class="mail"><span class="wpcf7-form-control-wrap tel-937"><input
+                                                <label class="mail"><span class="wpcf7-form-control-wrap tel-937">
+                                                    <input
+                                                        id="emailInput"
                                                         type="tel" name="tel-937" value="" size="40"
                                                         class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
                                                         aria-required="true" aria-invalid="false"
-                                                        placeholder="Nhập số điện thoại..."></span></label>
+                                                        placeholder="Nhập số điện thoại..."/>
+                                                </span></label>
                                             </div>
                                         </div>
                                         <div class="col medium-4 small-12 large-4">
                                             <div class="col-inner">
-                                                <button class="uppercase" type="submit">Gửi đi</button>
+                                                <button id="sendEmailBtn" class="uppercase" type="submit">Gửi đi</button>
                                             </div>
                                         </div>
                                     </div>
@@ -4661,6 +4672,16 @@ a:hover {
         "classPrefix": "mejs-",
         "stretching": "responsive"
     };
+
+
+    var email_btn = document.getElementById('sendEmailBtn');
+    email_btn.addEventListener("click",function(e){
+        e.preventDefault();
+        var emailBody = document.getElementById("emailInput").value;
+        var nameBody = document.getElementById("fullnameInput").value;
+        location.href = `mailto:giangnt421@gmail.com?subject=TienHaiStarCity&body=Họ và tên:${nameBody}%0D%0A Số điện thoại:${emailBody}`;
+    });
+
     /* ]]> */
 </script>
 <script type="text/javascript"
